@@ -22,8 +22,6 @@ public class VowelsSort {
 		
 		System.out.println(sortedVowels.get(0));
 		
-		
-	
 	
 //		for(int i=0;i<in.length();i++) {
 //			char c=in.charAt(i);

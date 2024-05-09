@@ -1,4 +1,4 @@
-package com.practice.easy;
+package com.practice.problems1;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,5 +18,5 @@ public class GenerateParanthesis {
 		List<String> result=generateParenthesis(a);
 		System.out.println(result);
 	}
-//Stashing--revert
+
 }

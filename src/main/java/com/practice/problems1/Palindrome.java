@@ -1,4 +1,4 @@
-package com.practice.easy;
+package com.practice.problems1;
 
 
 class Palindrome {
