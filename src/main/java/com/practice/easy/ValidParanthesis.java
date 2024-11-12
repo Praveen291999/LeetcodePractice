@@ -2,7 +2,6 @@ package com.practice.easy;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Queue;
 import java.util.Stack;
 
 //Input: s = "()[]{}"
@@ -32,12 +31,14 @@ public class ValidParanthesis {
 		mapString.put('{', '}');
 		mapString.put('[', ']');
 
-		// using Stack
+		// using Stack	
 		Stack<Character> stack = new Stack<>();
 		for (char c : s.toCharArray()) {
 			if (mapString.containsKey(c)) {
 				stack.push(c);
 			} else {
+				 // If it's a closing bracket, check for matching opening bracket
+				///Pop method removes from stack and returns the removed value
 				if (stack.isEmpty() || mapString.get(stack.pop()) != c) {
 					return false;
 				}
@@ -53,7 +54,5 @@ public class ValidParanthesis {
 		//below line is used to remove the blank space between the characters.
 		String a1 = s.replaceAll("\\s", "");
 		System.out.println(isValid(a1));
-
 	}
-
 }
